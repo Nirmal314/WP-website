@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html data-theme="corporate">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../input.css" />
+  </head>
+  <body>
+    <div class="navbar fixed top-0 z-50 backdrop-blur-xl">
+      <div class="navbar-start">
+        <a
+          class="btn-ghost btn rounded-lg border text-xl normal-case hover:bg-transparent"
+          >Shopify</a
+        >
+      </div>
+      <!-- ? desktop -->
+      <div class="navbar-center hidden lg:flex">
+        <ul class="flex space-x-6 px-1">
+          <li
+            class="border-[1.5px] border-transparent px-6 py-2 font-medium transition-all duration-300 ease-in-out hover:cursor-pointer hover:rounded-xl hover:border-blue-500"
+          >
+            <a href="../index.html">Home</a>
+          </li>
+          <li
+            class="border-[1.5px] border-transparent px-6 py-2 font-medium transition-all duration-300 ease-in-out hover:cursor-pointer hover:rounded-xl hover:border-blue-500"
+          >
+            <a>Products</a>
+          </li>
+          <li
+            class="border-[1.5px] border-transparent px-6 py-2 font-medium transition-all duration-300 ease-in-out hover:cursor-pointer hover:rounded-xl hover:border-blue-500"
+          >
+            <a>Contact us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <div class="flex space-x-2">
+          <input
+            type="text"
+            placeholder="Search..."
+            class="input-bordered input-primary input h-[36px] w-full max-w-xs rounded-xl"
+          />
+          <button
+            class="btn-outline btn-primary btn h-[36px] min-h-[36px] rounded-full"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-5 w-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg>
+          </button>
+          <button class="btn-primary btn h-[36px] min-h-[36px] rounded-xl">
+            <a href="../login/login.html"> Login </a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <main class="flex h-screen w-full items-center justify-center">
+      <div
+        class="shadow-all flex h-3/4 w-3/4 items-center justify-evenly rounded-lg border-2 border-primary"
+      >
+        <div class="flex h-1/2 w-1/4 items-center justify-center">
+          <img
+            height="75%"
+            width="75%"
+            src="../../images/signup.png"
+            alt="cc"
+          />
+        </div>
+        <div class="vl mr-0"></div>
+        <div class="flex w-[50%] flex-col space-y-7 px-16">
+          <p class="text-4xl font-bold tracking-[0.25rem]">
+            Create new account
+          </p>
+          <input
+            type="text"
+            placeholder="First name"
+            class="input-bordered input-primary input mt-10 rounded-lg border placeholder:text-base"
+          />
+          <input
+            type="text"
+            placeholder="Last name"
+            class="input-bordered input-primary input mt-10 rounded-lg border placeholder:text-base"
+          />
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="input-bordered input-primary input mt-10 rounded-lg border placeholder:text-base"
+          />
+          <input
+            type="password"
+            placeholder="Create new password"
+            class="input-bordered input-primary input mt-10 rounded-lg border placeholder:text-base"
+          />
+          <input
+            type="password"
+            placeholder="Confirm your password"
+            class="input-bordered input-primary input mt-10 rounded-lg border placeholder:text-base"
+          />
+          <button class="btn-outline btn-primary btn mt-16 rounded-xl">
+            Create account
+          </button>
+          <p class="mt-6 text-center text-sm">
+            Already have an account?
+            <span class="text-blue-700 underline"
+              ><a href="../login/login.html">Login</a></span
+            >
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

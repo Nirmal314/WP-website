@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .navbar {
+        background: rgba(
+          0,
+          0,
+          0,
+          0.5
+        ); /* Set the background color of the navbar with transparency */
+        backdrop-filter: blur(10px); /* Apply blur effect to the navbar */
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+
+      .navbar-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+
+      .navbar-item {
+        margin: 0 10px;
+        color: white; /* Set the initial text color */
+      }
+
+      .navbar-item::after {
+        content: ''; /* Create a pseudo-element to overlay on top of the text */
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        mix-blend-mode: difference; /* Use mix-blend-mode property to invert the colors */
+        opacity: 0.7; /* Set opacity to control the strength of the inversion */
+        filter: invert(1); /* Invert the colors of the pseudo-element */
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li class="navbar-item">Home</li>
+        <li class="navbar-item">About</li>
+        <li class="navbar-item">Contact</li>
+      </ul>
+    </nav>
+    <img src="../../images/laptop1.jpg" />
+  </body>
+</html>

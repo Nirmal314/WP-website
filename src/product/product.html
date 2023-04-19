@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
+<html data-theme="corporate">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Shopify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ? navbar -->
+    <div class="navbar fixed top-0 z-50 backdrop-blur-xl">
+      <div class="navbar-start">
+        <a
+          class="btn-ghost btn rounded-lg border text-xl normal-case hover:bg-transparent"
+          >Shopify</a
+        >
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="flex space-x-6 px-1">
+          <li
+            class="border-[1.5px] border-transparent px-6 py-2 font-medium transition-all duration-300 ease-in-out hover:cursor-pointer hover:rounded-xl hover:border-blue-500"
+          >
+            <a>Home</a>
+          </li>
+          <li
+            class="border-[1.5px] border-transparent px-6 py-2 font-medium transition-all duration-300 ease-in-out hover:cursor-pointer hover:rounded-xl hover:border-blue-500"
+          >
+            <a>Products</a>
+          </li>
+          <li
+            class="border-[1.5px] border-transparent px-6 py-2 font-medium transition-all duration-300 ease-in-out hover:cursor-pointer hover:rounded-xl hover:border-blue-500"
+          >
+            <a href="../contact/contact.html">Contact us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <div class="flex space-x-2">
+          <input
+            type="text"
+            placeholder="Search..."
+            class="input-bordered input-primary input h-[36px] w-full max-w-xs rounded-xl"
+          />
+          <button
+            class="btn-outline btn-primary btn h-[36px] min-h-[36px] rounded-full"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-5 w-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg>
+          </button>
+          <button class="btn-primary btn h-[36px] min-h-[36px] rounded-xl">
+            <a href="../login/login.html"> Login </a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="flex h-auto w-full flex-col items-center justify-center">
+      <div
+        class="mt-24 flex h-[80%] w-[80%] flex-col items-center justify-evenly space-y-16 p-14"
+      >
+        <div
+          class="shadow-all h-3/4 w-full space-y-8 border-2 border-primary p-14"
+        >
+          <!-- <div class="mt-8 pb-6">
+            <p class="text-center text-3xl font-semibold tracking-[0.75rem]">
+              LAPTOP 1
+            </p>
+          </div> -->
+          <div class="flex flex-wrap items-start justify-between">
+            <div class="w-full md:w-1/2">
+              <img
+                src="../../images/laptop2.jpg"
+                alt="Product Image"
+                class="w-full rounded-lg"
+              />
+            </div>
+            <div class="mt-0 w-1/2 pl-10">
+              <h1 class="text-3xl font-bold text-gray-900">Product Name</h1>
+              <p class="text-lg text-gray-500">Brand Name</p>
+              <p class="my-6 text-sm text-gray-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                illum necessitatibus ducimus quas officia similique, nobis illo
+                quisquam enim et vel officiis quibusdam consequatur nemo! Esse
+                expedita ullam placeat voluptatibus vitae animi sed ab alias.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellendus possimus, qui sint incidunt temporibus neque tempora
+                ipsum maxime! Fugit, reprehenderit?
+              </p>
+              <p class="mt-2 text-3xl text-gray-900">50,000 INR.</p>
+              <div class="mt-28 flex">
+                <button class="btn-primary btn mr-3 rounded-lg">Buy</button>
+                <button class="btn-outline btn-primary btn rounded-lg">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Product specifications section -->
+          <div class="mt-10">
+            <h2
+              class="inline-block border-b-4 border-primary text-3xl font-bold tracking-wider text-gray-900"
+            >
+              Specifications
+            </h2>
+            <table class="mt-5 w-full divide-y divide-gray-200">
+              <tbody class="divide-y divide-blue-300 bg-white">
+                <tr>
+                  <td class="whitespace-nowrap px-6 py-4 font-bold">RAM</td>
+                  <td class="whitespace-nowrap px-6 py-4">8GB</td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap px-6 py-4 font-bold">
+                    Processor
+                  </td>
+                  <td class="whitespace-nowrap px-6 py-4">Intel Core i5</td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap px-6 py-4 font-bold">
+                    Generation
+                  </td>
+                  <td class="whitespace-nowrap px-6 py-4">10th</td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap px-6 py-4 font-bold">Storage</td>
+                  <td class="whitespace-nowrap px-6 py-4">512GB SSD</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

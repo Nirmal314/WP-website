@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.vl {
+  border-right: 2px solid #4b6bfb;
+  height: 35rem;
+  /* margin-right: 20%; */
+}
+.shadow-all {
+  animation: sh 4s ease-in-out infinite;
+}
+
+@keyframes sh {
+  0% {
+    box-shadow: 0 0 40px rgba(67, 192, 245, 0.25);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(67, 192, 245, 0.75);
+  }
+  100% {
+    box-shadow: 0 0 40px rgba(67, 192, 245, 0.25);
+  }
+}
